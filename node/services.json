@@ -2,6 +2,7 @@
   "aa": "http://www.aa.com/i18n/footer/privacyPolicy.jsp",
   "apple": "https://www.apple.com/privacy/",
   "beam": "https://beam.pro/legal/privacy",
+  "dallascityhall": "http://dallascityhall.com/departments/publicinformationoffice/Pages/privacy.aspx",
   "digitalocean": "https://www.digitalocean.com/legal/privacy/",
   "dropbox": "https://www.dropbox.com/terms#privacy",
   "facebook": "https://www.facebook.com/policy.php",
@@ -15,5 +16,6 @@
   "stackoverflow": "http://stackexchange.com/legal/privacy-policy",
   "steampowered": "http://store.steampowered.com/privacy_agreement/",
   "twitter": "https://twitter.com/privacy?lang=en",
-  "virginamerica": "https://www.virginamerica.com/cms/legal/privacy-policy/"
+  "virginamerica": "https://www.virginamerica.com/cms/legal/privacy-policy/",
+  "verizon": "https://www.verizon.com/about/privacy/"
 }
