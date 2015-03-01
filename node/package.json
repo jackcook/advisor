@@ -13,6 +13,8 @@
     "express": "~4.12.0",
     "jade": "~1.9.2",
     "morgan": "~1.5.1",
+    "natural": "^0.2.0",
+    "read-file": "^0.1.2",
     "serve-favicon": "~2.2.0"
   }
 }
