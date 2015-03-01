@@ -13,18 +13,25 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/class', function(req, res, next) {
-    diffbot.article({uri: 'https://twitter.com/privacy'}, function(err, resp, req) {
-        console.log(nlp.scan(resp.text));
-        res.send(nlp.scan(resp.text));
-    });
+  diffbot.article({uri: 'https://twitter.com/tos?lang=en'}, function(err, resp, req) {
+    res.send(nlp.scan(resp.text));
+  });
 });
 
-router.get('/evaluate/:url', function(req, res, next) {
-    console.log(req.params.url);
-    diffbot.article({uri: req.params.url}, function(err, resp, req) {
-        console.log(resp.text);
-        res.send(nlp.scan(resp.text));
-    });
+router.get('/evaluate/:service', function(req, res, next) {
+  diffbot.article({uri: service_to_url(req.params.service)}, function(err, resp, req) {
+    res.send(nlp.scan(resp.text));
+  });
 });
+
+function service_to_url(service) {
+  var services = {
+    "facebook": "https://www.facebook.com/legal/terms",
+    "reddit": "http://www.reddit.com/help/useragreement",
+    "twitter": "https://twitter.com/tos?lang=en"
+  };
+
+  return services[service];
+}
 
 module.exports = router;
