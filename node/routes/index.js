@@ -14,7 +14,14 @@ router.get('/:service', function(req, res, next) {
   var service = service_to_url(req.params.service);
   diffbot.article({uri: service}, function(err, resp, req) {
     var data = lang.scan(resp.text);
-    res.render('index', {'title': 'Title', objects: data})
+    var newdata = [];
+    for (var i = 0; i < data.length; i++) {
+      var services = JSON.parse(file.readFileSync('flags.json'));
+      var description = services[data[i]["label"]]["description"];
+      newdata.push(description);
+    }
+
+    res.render('index', {'title': 'Title', objects: newdata})
   });
 });
 
