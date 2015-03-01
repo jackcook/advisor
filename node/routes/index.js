@@ -1,4 +1,5 @@
 var express = require('express');
+var file = require('read-file');
 var router = express.Router();
 var nlp = require('../nlp');
 
@@ -19,19 +20,21 @@ router.get('/class', function(req, res, next) {
 });
 
 router.get('/evaluate/:service', function(req, res, next) {
-  diffbot.article({uri: service_to_url(req.params.service)}, function(err, resp, req) {
+  var service = service_to_url(req.params.service);
+  diffbot.article({uri: service}, function(err, resp, req) {
     res.send(nlp.scan(resp.text));
   });
 });
 
 function service_to_url(service) {
-  var services = {
-    "facebook": "https://www.facebook.com/legal/terms",
-    "reddit": "http://www.reddit.com/help/useragreement",
-    "twitter": "https://twitter.com/tos?lang=en"
-  };
+  var services = JSON.parse(file.readFileSync('services.json'));
+  for (var key in services) {
+    if (key == service) {
+      return services[service];
+    }
+  }
 
-  return services[service];
+  return undefined;
 }
 
 module.exports = router;
