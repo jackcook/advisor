@@ -1,6 +1,27 @@
 {
-  "analytics": "This website may gather potentially personally identifiable information, such as your location and browsing behaviors.",
-  "marketing": "This website may use data gathered about you to show you relevant advertisements.",
-  "sharing": "This website may share data with its affiliates",
-  "billing": "This website may store your payment info and charge you money for services and goods."
+  "analytics": {
+    "description": "This site uses your data to aggregate a set of analytics.",
+    "phrases": [
+      "gather personally identifiable information"
+    ]
+  },
+  "marketing": {
+    "description": "Marketing!",
+    "phrases": [
+      "show you relevant advertisements"
+    ]
+  },
+  "sharing": {
+    "description": "Sharing!",
+    "phrases": [
+      "share data with its affiliates"
+    ]
+  },
+  "billing": {
+    "description": "Billing!",
+    "phrases": [
+      "store your payment info",
+      "charge you money"
+    ]
+  }
 }

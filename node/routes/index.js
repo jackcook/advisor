@@ -13,7 +13,8 @@ exports.index = function(req, res) {
 router.get('/:service', function(req, res, next) {
   var service = service_to_url(req.params.service);
   diffbot.article({uri: service}, function(err, resp, req) {
-    res.send(lang.scan(resp.text));
+    var data = lang.scan(resp.text);
+    res.render('index', {'title': 'Title', objects: data})
   });
 });
 

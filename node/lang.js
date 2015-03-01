@@ -9,10 +9,12 @@ exports.scan = function (string) {
 };
 
 exports.start = function () {
-  var hotwords = JSON.parse(file.readFileSync('hotwords.json'));
+  var hotwords = JSON.parse(file.readFileSync('flags.json'));
   for (var key in hotwords) {
-    var value = hotwords[key];
-    classifier.addDocument(key, value);
+    var phrases = hotwords[key]['phrases'];
+    for (var i = 0; i < phrases.length; i++) {
+      classifier.addDocument(phrases[i], key);
+    }
   }
 
   classifier.train();
