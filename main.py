@@ -1,7 +1,7 @@
 from bottle import route, run, request
 import json
+import nltk
 import requests
-from pprint import pprint
 
 @route('/')
 def main():
@@ -15,7 +15,13 @@ def main():
 
     data = r.json()
     tos = data["objects"][0]["text"]
+    tokens = nltk.word_tokenize(tos)
 
-    return tos
+    flags = {}
+
+    if "data" in tokens:
+        flags["flags"] = ["user_data", "test"]
+
+    return json.dumps(flags)
 
 run(host='localhost', port=8080, debug=True)
