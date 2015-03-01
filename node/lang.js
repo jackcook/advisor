@@ -22,10 +22,13 @@ exports.scan = function (string) {
 };
 
 exports.start = function () {
-  var hotwords = JSON.parse(file.readFileSync('hotwords.json'));
-  for (var key in hotwords) {
-    var value = hotwords[key];
-    classifier.addDocument(key, value);
+  var flags = JSON.parse(file.readFileSync('flags.json'));
+  for (var key in flags) {
+    var words = flags[key]["words"];
+    for (var i = 0; i < words.length; i++) {
+      var word = words[i];
+      classifier.addDocument(word, key);
+    }
   }
 
   classifier.train();

@@ -1,41 +1,57 @@
 {
   "analytics": {
     "description": "This site uses your data for internal research to improve user experience.",
-    "phrases": [
-      "gather personally identifiable information"
+    "words": [
+      "analytics",
+      "collect data",
+      "collect information",
+      "device information",
+      "personal information",
+      "logging",
+      "statistics"
     ]
   },
   "marketing": {
     "description": "This site uses your data to provide relevant advertisements, potentially involving a 3rd party.",
-    "phrases": [
-      "show you relevant advertisements"
+    "words": [
+      "marketing",
+      "advertisements",
+      "relevant advertising",
+      "tailor ads"
     ]
   },
   "sharing": {
     "description": "This site shares your data with their affiliates, sometimes that data will be personally-identifiable.",
-    "phrases": [
-      "share data with its affiliates"
+    "words": [
+      "will disclose to third party",
+      "affiliates"
     ]
   },
   "billing": {
     "description": "This site may store your payment details if you purchase something.",
-    "phrases": [
-      "store your payment info",
-      "charge you money"
+    "words": [
+      "billing",
+      "payment",
+      "charges",
+      "payment information",
+      "selling",
+      "buying"
     ]
   },
   "cookies": {
     "description": "This site uses cookies to keep track of you across pages on the site.",
-    "phrases": [
-      "we use cookies",
-      "cookies are required"
+    "words": [
+      "cookies",
+      "session"
     ]
   },
   "age": {
     "description": "This site requires you to be over the age of 13.",
-    "phrases": [
-      "age of 13",
-      "children"
+    "words": [
+      "children",
+      "age",
+      "18",
+      "13"
     ]
   }
 }
