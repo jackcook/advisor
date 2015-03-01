@@ -4,7 +4,8 @@ var file = require('read-file');
 var exports = module.exports = {}
 
 exports.scan = function (string) {
-  return classifier.getClassifications(string);
+  c = classifier.getClassifications(string);
+  return c;
 };
 
 
