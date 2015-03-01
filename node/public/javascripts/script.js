@@ -1,6 +1,6 @@
-var app = angular.module('StarterApp', ['ngMaterial']);
+var app = angular.module('HackDFW', ['ngMaterial']);
 
-app.controller('AppCtrl', function($scope, $mdSidenav) {
+app.controller('AppCtrl', function($scope) {
   $scope.flags = [
     {
       "name": "This is my flag",
