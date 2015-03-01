@@ -23,5 +23,12 @@
       "store your payment info",
       "charge you money"
     ]
+  },
+  "cookies": {
+    "description": "Cookies!",
+    "phrases": [
+      "we use cookies",
+      "cookies are required"
+    ]
   }
 }

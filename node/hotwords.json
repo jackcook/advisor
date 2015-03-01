@@ -17,5 +17,7 @@
   "charges": "billing",
   "payment information": "billing",
   "selling": "billing",
-  "buying": "billing"
+  "buying": "billing",
+  "cookies": "cookies",
+  "session": "cookies"
 }

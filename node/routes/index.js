@@ -7,12 +7,12 @@ var Diffbot = require('diffbot').Diffbot;
 var diffbot = new Diffbot('0d5c56d2a7a3a5a4ad6c644b326993c2');
 
 exports.index = function(req, res) {
-  res.render('index', {hideHeader: true});
+  res.render('index', {});
 }
 
 router.get('/:service', function(req, res, next) {
   var service = service_to_url(req.params.service);
-  diffbot.article({uri: service}, function(err, resp, req) {
+  diffbot.article({uri: service}, function(err, resp, requ) {
     var data = lang.scan(resp.text);
     var newdata = [];
     for (var i = 0; i < data.length; i++) {
@@ -21,7 +21,8 @@ router.get('/:service', function(req, res, next) {
       newdata.push(description);
     }
 
-    res.render('index', {'title': 'Title', objects: newdata})
+    var title = req.params.service
+    res.render('index', {'title': title.charAt(0).toUpperCase() + title.slice(1), objects: newdata})
   });
 });
 
