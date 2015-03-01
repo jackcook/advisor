@@ -1,14 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "BTC Price Check",
-  "description": "Shows you the price",
+  "name": "Jack Cook",
+  "description": "Mr. Cook, Jack",
   "version": "1.0.1",
   
-  "icons": { "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png",
-		"256": "icon256.png",
-		"512": "icon512.png"},
+  
   "permissions": [ "https://api.bitfinex.com/v1/pubticker/btcusd" ],
   "browser_action": {
     "default_popup": "popup.html"
