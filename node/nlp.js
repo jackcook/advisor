@@ -4,7 +4,7 @@ var file = require('read-file');
 
 nlp.scan = function (string) {
   choochoo(function() {
-	 return classifier.classify(string);
+    return classifier.classify(string);
   });
 };
 

@@ -1,10 +1,10 @@
 {
   "analytics": "analytics",
-  "collect data":"analytics",
-  "device information":"analytics",
-  "logging":"analytics",
-  "marketing":"marketing",
-  "advertisements":"marketing",
-  "will disclose to third party":"sharing",
-  "location":"location"
+  "collect data": "analytics",
+  "device information": "analytics",
+  "logging": "analytics",
+  "marketing": "marketing",
+  "advertisements": "marketing",
+  "will disclose to third party": "sharing",
+  "location": "location"
 }
