@@ -1,5 +1,9 @@
 {
+  "aa": "http://www.aa.com/i18n/AAdvantage/termsConditions.jsp",
+  "beam": "https://beam.pro/legal/tos",
   "facebook": "https://www.facebook.com/legal/terms",
+  "github": "https://help.github.com/articles/github-terms-of-service/",
+  "google": "http://www.google.com/intl/en/policies/terms/",
   "reddit": "http://www.reddit.com/help/useragreement",
   "twitter": "https://twitter.com/tos?lang=en"
 }

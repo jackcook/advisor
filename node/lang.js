@@ -8,20 +8,12 @@ exports.scan = function (string) {
   return c;
 };
 
-
-/*
-This is an internal function to collect all the hotwords
-*/
-exports.choochoo = function (callback) {
+exports.start = function () {
   var hotwords = JSON.parse(file.readFileSync('hotwords.json'));
   for (var key in hotwords) {
     var value = hotwords[key];
     classifier.addDocument(key, value);
   }
-  classifier.train();
-  callback();
-}
 
-classifier.events.on('trainedWithDocument', function (obj) {
-  console.log(obj);
-});
+  classifier.train();
+}
