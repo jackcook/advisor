@@ -4,25 +4,24 @@ md-toolbar h1 {
   margin: auto;
 }
 
-md-content {
-  margin: 4px 12px;
+table {
+  margin: 8px 12px;
 }
 
-md-item {
+/*md-item {
   display: block;
+  margin-bottom: 16px;
+}*/
+
+tr {
   margin-bottom: 16px;
 }
 
-md-item * {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-md-item img {
+td img {
   width: 24px;
 }
 
-md-item span {
+td div {
   margin-left: 12px;
   font-size: 18px;
 }
