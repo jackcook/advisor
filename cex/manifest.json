@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Jack Cook",
-  "description": "Mr. Cook, Jack",
-  "version": "1.0.1",
+  "name": "Advisor",
+  "description": "Converts websites' privacy policies to a human readable format, easily accessible from your browser.",
+  "version": "0.1",
 
   "permissions": [
     "tabs", "http://*/*", "https://*/*"
@@ -11,6 +11,12 @@
   "background": {
     "persistent": false,
     "scripts": ["background.js"]
+  },
+
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
   },
 
   "browser_action": {
