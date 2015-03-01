@@ -1,9 +1,15 @@
 {
   "aa": "http://www.aa.com/i18n/AAdvantage/termsConditions.jsp",
+  "apple": "https://www.apple.com/legal/internet-services/icloud/en/terms.html",
   "beam": "https://beam.pro/legal/tos",
+  "dropbox": "https://www.dropbox.com/terms",
   "facebook": "https://www.facebook.com/legal/terms",
   "github": "https://help.github.com/articles/github-terms-of-service/",
+  "gmail": "http://www.google.com/intl/en/policies/terms/",
   "google": "http://www.google.com/intl/en/policies/terms/",
   "reddit": "http://www.reddit.com/help/useragreement",
-  "twitter": "https://twitter.com/tos?lang=en"
+  "skype": "http://www.skype.com/en/legal/tou-usa/",
+  "steampowered": "http://store.steampowered.com/subscriber_agreement/",
+  "twitter": "https://twitter.com/tos?lang=en",
+  "virginamerica": "https://www.virginamerica.com/cms/legal/terms-and-conditions/"
 }
