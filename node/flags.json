@@ -30,5 +30,12 @@
       "we use cookies",
       "cookies are required"
     ]
+  },
+  "age": {
+    "description": "This site requires you to be over the age of 13.",
+    "phrases": [
+      "age of 13",
+      "children"
+    ]
   }
 }

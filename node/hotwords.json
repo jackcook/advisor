@@ -19,5 +19,9 @@
   "selling": "billing",
   "buying": "billing",
   "cookies": "cookies",
-  "session": "cookies"
+  "session": "cookies",
+  "children": "age",
+  "age": "age",
+  "18": "age",
+  "13": "age"
 }
