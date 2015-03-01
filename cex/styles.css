@@ -1,64 +1,15 @@
-/*
-    NOSE.JS 1337 HAKER RANK REIGNING CHAMPS 2015-2016
-*/
-
-
 body {
-/*  overflow-x: hidden;*/
   font-family: roboto;
-    margin: 0px;
+  margin: 0px;
 }
 
-.popup_wrapper{
-    width: 360px;
-    padding: 0px;
+iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.title1{
-    font-size: 24px;
-    
-}
-
-.term_wrapper{
-    padding: 6px 0px 6px 0px;
-}
-
-.term_icon{
-    vertical-align: middle;
-}
-
-.term_title{
-    font-size: 18px;
-    color: #111;
-}
-
-.term_text{
-    font-size: 12px;
-    color: #444;
-}
-.title_wrapper {
-    border-radius: 6px 6px 0px 0px;
-    padding: 5px;
-    background: #6ad
-}
-
-.body_wrapper {
-    padding: 5px;
-    background: #eeefee;
-}
-
-.site_info_wrapper {
-    padding: 5px 0px;
-}
-
-.site_info_title {
-    font-size: 24px;
-}
-
-.site_info_text {
-    color: #444;
-}
-
-.terms_container {
-    padding: 10px 5px;
+.popup_wrapper {
+  width: 360px;
+  height: 1000px;
 }

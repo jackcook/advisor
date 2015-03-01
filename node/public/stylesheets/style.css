@@ -4,9 +4,13 @@ md-toolbar h1 {
   margin: auto;
 }
 
+md-content {
+  margin: 4px 12px;
+}
+
 md-item {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 md-item * {
@@ -15,10 +19,10 @@ md-item * {
 }
 
 md-item img {
-  width: 32px;
+  width: 24px;
 }
 
 md-item span {
   margin-left: 12px;
-  font-size: 24px;
+  font-size: 18px;
 }

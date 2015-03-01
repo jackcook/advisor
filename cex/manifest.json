@@ -3,11 +3,9 @@
   "name": "Jack Cook",
   "description": "Mr. Cook, Jack",
   "version": "1.0.1",
-  
-  
-  "permissions": [ "https://api.bitfinex.com/v1/pubticker/btcusd" ],
+
+  "permissions": [ "http://url.goes.here/" ],
   "browser_action": {
     "default_popup": "popup.html"
   }
-  
 }
