@@ -1,37 +1,18 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
-  <head>
-    <title>Getting Started Extension's Popup</title>
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-      }
-    </style>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Jack Cook: The Extension</title>
+    </head>
+    <body>
+        <script src="popup.js"></script>
+        <img src="icon.png">                    <h2 id="title">Jack Cook</h2></br>
+        <input type="checkbox" name="refresher" id="refresher"><div id="refresh">Auto Refresh</div></br>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
-    <script src="popup.js"></script>
-  </head>
-  <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
-  </body>
+        <div id="info">
+            <h2 class="dataname">Last Price:</h2>   <h2>$<div id="price"></div></h2></br>
+            <h2 class="dataname">Bid: </h2>         <h2>$<div id="bid"></div></h2></br>
+            <h2 class="dataname">Ask: </h2>         <h2>$<div id="ask"></div></h2>
+        </div>
+    </body>
 </html>
-
