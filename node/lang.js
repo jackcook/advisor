@@ -6,12 +6,18 @@ var exports = module.exports = {}
 exports.scan = function (string) {
   c = classifier.getClassifications(string);
   var a = [];
-/*  for(key in c) {
-    console.log(c[key]);
-    if(c[key]['value'] > 0.0000001)
-      a.push(c[key])
-  }*/
-  a = [c[0],c[1],c[2]];
+  var sum = 0;
+  var total = 0;
+  for(key in c) {
+    sum += c[key]['value'];
+    total++;
+  }
+  sum /= total;
+  for(key2 in c) {
+    console.log(c[key2]);
+    if(c[key2]['value'] > sum / 2)
+      a.push(c[key2])
+  }
   return a;
 };
 
