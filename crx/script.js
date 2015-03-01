@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var p3 = p2[0].split(".");
     var site = p3[p3.length - 2];
 
-    document.getElementById('frame').setAttribute('src', 'http://localhost:3000/' + site);
+    document.getElementById('frame').setAttribute('src', 'http://104.236.220.68:3000/' + site);
   });
 })
