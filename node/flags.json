@@ -1,24 +1,24 @@
 {
   "analytics": {
-    "description": "This site uses your data to aggregate a set of analytics.",
+    "description": "This site uses your data for internal research to improve user experience.",
     "phrases": [
       "gather personally identifiable information"
     ]
   },
   "marketing": {
-    "description": "Marketing!",
+    "description": "This site uses your data to provide relevant advertisements, potentially involving a 3rd party.",
     "phrases": [
       "show you relevant advertisements"
     ]
   },
   "sharing": {
-    "description": "Sharing!",
+    "description": "This site shares your data with their affiliates, sometimes that data will be personally-identifiable.",
     "phrases": [
       "share data with its affiliates"
     ]
   },
   "billing": {
-    "description": "Billing!",
+    "description": "This site may store your payment details if you purchase something.",
     "phrases": [
       "store your payment info",
       "charge you money"
