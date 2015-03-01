@@ -5,20 +5,19 @@ var exports = module.exports = {}
 
 exports.scan = function (string) {
   c = classifier.getClassifications(string);
-  var a = [];
-  var sum = 0;
-  var total = 0;
-  for(key in c) {
-    sum += c[key]['value'];
-    total++;
+  results = [];
+
+  var last = parseInt(c[c.length - 1]["value"].toString().split("e")[1]);
+
+  for (var key in c) {
+    var num = parseInt(c[key]["value"].toString().split("e")[1]);
+    if (num - 1 > last || isNaN(num - 1)) {
+      results.push(c[key]);
+      console.log("passed " + key);
+    }
   }
-  sum /= total;
-  for(key2 in c) {
-    console.log(c[key2]);
-    if(c[key2]['value'] > sum / 2)
-      a.push(c[key2])
-  }
-  return a;
+
+  return results;
 };
 
 exports.start = function () {
