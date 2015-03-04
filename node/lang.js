@@ -13,7 +13,6 @@ exports.scan = function (string) {
     var num = parseInt(c[key]["value"].toString().split("e")[1]);
     if (num - 1 > last || isNaN(num - 1)) {
       results.push(c[key]);
-      console.log("passed " + key);
     }
   }
 
